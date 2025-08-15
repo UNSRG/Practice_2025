@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+    background: #1a3a6e;
+    color: white;
+    border-radius: 10px 10px 0 0;
+    margin: -20px -20px 20px -20px;
+}
+
+.profile {
+    text-align: center;
+    padding: 20px;
+}
+
+.profile-img {
+    width: 150px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid #1a3a6e;
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: #1a3a6e;
+    margin-bottom: 10px;
+}
+
+ul {
+    margin: 15px auto;
+    text-align: left;
+    max-width: 400px;
+    list-style-position: inside;
+}
+
+ul li {
+    margin: 8px 0;
+    color: #444;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 15px;
+    background: #1a3a6e;
+    color: white;
+    border-radius: 0 0 10px 10px;
+    font-size: 0.9em;
+}
+
+/* Адаптивность */
+@media (max-width: 600px) {
+    .container {
+        margin: 10px;
+        padding: 15px;
+    }
+    header, footer {
+        margin: -15px -15px 15px -15px;
+    }
+    .profile-img {
+        width: 120px;
+        height: 150px;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+}
